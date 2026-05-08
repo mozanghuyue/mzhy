@@ -3,21 +3,15 @@ socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
 allow-lan: false
+unified-delay: true
 mode: rule
 log-level: info
-external-controller: 0.0.0.0:9090
-unified-delay: true
-sniffer:
-  sniff:
-    TLS: {ports: [443], override-destination: true}
-    HTTP: {ports: [443], override-destination: true}
-  enable: true
-  parse-pure-ip: false
-  force-dns-mapping: true
-  override-destination: true
 ipv6: false
+external-controller: 0.0.0.0:9090
 clash-for-android:
   append-system-dns: false
+profile:
+  tracing: true
 experimental:
   sniff-tls-sni: true
 proxies:
