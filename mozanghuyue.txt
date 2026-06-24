@@ -204,6 +204,7 @@ proxies:
 proxy-groups:
   - name: Proxies
     type: select
+    url: http://www.gstatic.com/generate_204
     proxies:
       - Fallback
       - HK
