@@ -119,6 +119,7 @@ fake-ip-filter:
     - "+.steamstatic.com"
     - "+.steamcdn-a.akamaihd.net"
     - localhost.work.weixin.qq.com
+
 proxies:
   - {name: 🇭🇰 香港实验性 IEPL 专线 1, server: 7d0a2gz0-7a0c.apt-hcloud.net, port: 10015, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 440c5ab399.m.ctrip.com}, udp: true}
   - {name: 🇯🇵 日本实验性 IEPL 专线 1, server: 63182sh8-4d7b.apt-hcloud.net, port: 10025, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 440c5ab399.m.ctrip.com}, udp: true}
