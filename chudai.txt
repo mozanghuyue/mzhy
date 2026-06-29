@@ -9,7 +9,7 @@ external-controller: 0.0.0.0:9090
 unified-delay: true
 sniffer:
   sniff:
-    TLS: {ports: [80], override-destination: true}
+    TLS: {ports: [443], override-destination: true}
     HTTP: {ports: [443], override-destination: true}
   enable: true
   parse-pure-ip: false
@@ -25,20 +25,14 @@ dns:
   ipv6: false
   listen: 0.0.0.0:1053
   use-hosts: false
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-persistence: false
-nameserver:
-  - 119.29.29.29
-  - 223.5.5.5
-  - https://dns.alidns.com/dns-query
-  - https://doh.pub/dns-query
-fallback:
-  - https://1.1.1.1/dns-query
-  - https://8.8.8.8/dns-query
-fallback-filter:
-  geoip: true
-  geoip-code: CN
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+    - tls://223.5.5.5:853
+    - tls://223.6.6.6:853
+    - tls://120.53.53.53
+    - tls://1.12.12.12
+  fake-ip-range: 198.18.0.1/15
   fake-ip-filter:
     - "*.lan"
     - "*.localdomain"
@@ -69,7 +63,7 @@ fallback-filter:
     - ntp7.*.com
     - "*.time.edu.cn"
     - "*.ntp.org.cn"
-    - "+.pool.ntp.org"
+    - +.pool.ntp.org
     - time1.cloud.tencent.com
     - stun.*.*
     - stun.*.*.*
@@ -99,10 +93,10 @@ fallback-filter:
     - "*.xiami.com"
     - "*.music.migu.cn"
     - music.migu.cn
-    - "+.wotgame.cn"
-    - "+.wggames.cn"
-    - "+.wowsgame.cn"
-    - "+.wargaming.net"
+    - +.wotgame.cn
+    - +.wggames.cn
+    - +.wowsgame.cn
+    - +.wargaming.net
     - "*.*.*.srv.nintendo.net"
     - "*.*.stun.playstation.net"
     - xbox.*.*.microsoft.com
@@ -111,18 +105,13 @@ fallback-filter:
     - teredo.*.*.*
     - teredo.*.*
     - speedtest.cros.wr.pvp.net
-    - "+.jjvip8.com"
+    - +.jjvip8.com
     - www.douyu.com
     - activityapi.huya.com
     - activityapi.huya.com.w.cdngslb.com
     - www.bilibili.com
     - api.bilibili.com
     - a.w.bilicdn1.com
-    - "+.steamcontent.com"
-    - "+.steamserver.net"
-    - "+.steamstatic.com"
-    - "+.steamcdn-a.akamaihd.net"
-    - localhost.work.weixin.qq.com
 proxies:
   - {name: 🇭🇰 香港实验性 IEPL 专线 1, server: 7d0a2gz0-7a0c.apt-hcloud.net, port: 10011, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 440c5ab399.m.ctrip.com}, udp: true}
   - {name: 🇯🇵 日本实验性 IEPL 专线 1, server: 63182sh8-4d7b.apt-hcloud.net, port: 10021, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 440c5ab399.m.ctrip.com}, udp: true}
