@@ -26,12 +26,9 @@ dns:
   listen: 0.0.0.0:1053
   use-hosts: false
   nameserver:
-    - 119.29.29.29
+    - quic://dns.alidns.com
     - 223.5.5.5
-    - tls://223.5.5.5:853
-    - tls://223.6.6.6:853
-    - tls://120.53.53.53
-    - tls://1.12.12.12
+    - 119.29.29.29
   fake-ip-range: 198.18.0.1/15
   fake-ip-filter:
     - "*.lan"
