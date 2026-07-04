@@ -1,4 +1,3 @@
-// 备用秘钥:d6a78ad8b0
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -110,6 +109,7 @@ dns:
     - www.bilibili.com
     - api.bilibili.com
     - a.w.bilicdn1.com
+// 备用秘钥:d6a78ad8b0
 proxies:
   - {name: 🇭🇰 香港实验性 IEPL 专线 1, server: 50196gz8-f6k7.apt-agent.dev, port: 10015, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 440c5ab399.m.ctrip.com}, udp: true}
   - {name: 🇯🇵 日本实验性 IEPL 专线 1, server: 21492sh1-b2d1.apt-agent.dev, port: 10025, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: 440c5ab399.m.ctrip.com}, udp: true}
