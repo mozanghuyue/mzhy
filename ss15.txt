@@ -479,7 +479,6 @@ proxy-groups:
       - 🇺🇸 美国标准 IEPL 专线 7
       - 🇺🇸 美国标准 IEPL 专线 8
 rules:
-  - DOMAIN-KEYWORD,nano.jmsuper.com,Netflix
   - DOMAIN,app.adjust.com,DIRECT
   - DOMAIN,app.appsflyer.com,DIRECT
   - DOMAIN,bdtj.tagtic.cn,DIRECT
