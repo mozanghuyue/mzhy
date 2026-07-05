@@ -299,6 +299,7 @@ proxy-groups:
       - 🇳🇬 尼日利亚标准 IEPL 专线 1
   - name: YouTube
     type: select
+    hidden: true
     proxies:
       - Proxies
       - HK
@@ -317,6 +318,7 @@ proxy-groups:
       - US
   - name: Disney
     type: select
+    hidden: true
     proxies:
       - Proxies
       - HK
@@ -326,6 +328,7 @@ proxy-groups:
       - US
   - name: Bahamut
     type: select
+    hidden: true
     proxies:
       - Proxies
       - HK
@@ -357,6 +360,7 @@ proxy-groups:
       - US
   - name: PayPal
     type: select
+    hidden: true
     proxies:
       - Proxies
       - DIRECT
@@ -367,6 +371,7 @@ proxy-groups:
       - US
   - name: OpenAI
     type: select
+    hidden: true
     proxies:
       - Proxies
       - HK
@@ -376,6 +381,7 @@ proxy-groups:
       - US
   - name: Apple
     type: select
+    hidden: true
     proxies:
       - Proxies
       - DIRECT
