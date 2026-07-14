@@ -25,15 +25,19 @@ experimental:
 dns:
   enable: true
   ipv6: false
-  listen: 127.0.0.1:1053
-  use-hosts: false
+  listen: 127.0.0.1:7874
+  use-hosts: true
   use-system-hosts: false
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
+    - tls://119.29.29.29
+    - tls://223.5.5.5
+    - https://dns.pub/dns-query
+    - https://dns.alidns.com/dns-query
   proxy-server-nameserver:
-    - udp://127.0.0.1:1053
-  fake-ip-range: 198.18.0.1/15
+    - udp://127.0.0.1:7874
+  fake-ip-range: 198.18.0.0/15
   fake-ip-filter:
     - "*.lan"
     - "*.localdomain"
