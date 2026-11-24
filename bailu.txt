@@ -413,7 +413,7 @@ proxy-groups:
       - TW
       - US
   - name: HK
-    type: url-test
+    type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
@@ -430,7 +430,7 @@ proxy-groups:
       - 🇭🇰 香港标准 IEPL 专线 7
       - 🇭🇰 香港标准 IEPL 专线 8
   - name: SG
-    type: url-test
+    type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
@@ -447,7 +447,7 @@ proxy-groups:
       - 🇸🇬 新加坡标准 IEPL 专线 7
       - 🇸🇬 新加坡标准 IEPL 专线 8
   - name: TW
-    type: url-test
+    type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
@@ -458,7 +458,7 @@ proxy-groups:
       - 🇨🇳 台湾标准 IEPL 专线 2
       - 🇨🇳 台湾标准 IEPL 专线 3
   - name: JP
-    type: url-test
+    type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
@@ -475,7 +475,7 @@ proxy-groups:
       - 🇯🇵 日本标准 IEPL 专线 7
       - 🇯🇵 日本标准 IEPL 专线 8
   - name: US
-    type: url-test
+    type: select
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
